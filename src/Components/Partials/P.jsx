@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-function P({text,classes}) {
+function P({text,className}) {
     return (
-        <p className={classes}>{text}</p>
+        <p className={className}>{text}</p>
     )
 }
 

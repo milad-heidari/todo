@@ -1,3 +1,20 @@
+*{
+    font-family:cursive;
+}
+
+
 body{
     background-color: #C4DBE0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF8066;
+}
+
+p,a{
+    color: #4B4453;
 }

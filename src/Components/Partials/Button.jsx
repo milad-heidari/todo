@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-function Button({type,classes,title}) {
+function Button({type,className,title}) {
     return (
-        <button type={type} className={classes}>
+        <button type={type} className={className}>
             {title}
         </button>
     )
