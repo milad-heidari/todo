@@ -7,5 +7,4 @@ const components = {
     Input,
     P,
 }
-
 export default components;
