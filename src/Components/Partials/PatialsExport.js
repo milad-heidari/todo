@@ -2,9 +2,10 @@ import Button from './Button'
 import Input from './Input'
 import P from './P'
 
-
-export default {
+const components = {
     Button,
     Input,
     P,
 }
+
+export default components;
