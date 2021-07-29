@@ -1,29 +1,14 @@
 .container{
-     /* Background color */
-     /* background-color: #C4DBE0; */
-     /* background-color: rgba(0, 0, 0, 0.3); */
- 
-     /* You can use gradient background color such as
-     background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%); */
- 
-     /* Curved corners */
-     /* border-bottom-left-radius: 90% 70%;
-     border-bottom-right-radius: 30% 60%; */
- 
-     /* align-content: center; */
      align-items: center;
-     /* text-align: center; */
- 
      display: flex;
      flex-direction: column;
- 
      height:inherit;
      padding: 0;
 }
 
 .add-form-box{
-     width: calc(95% );
-     /* background-color: #00a8a8be; */
+     width: calc(100% );
+     margin: 10px;
      background-color: #FEFEDF;
      border-radius: 5px;
      height: 100px;
@@ -34,7 +19,6 @@
      align-items: center;
      justify-content: center;
      flex-direction: column;
-     /* margin-top: 60px; */
 }
 
 .add-form-box__title{
@@ -43,8 +27,6 @@
 
 .add-form{
      width: 80%;
-     /* background-color: yellow; */
-     /* padding: 12px; */
      padding-top: 0px;
      display: flex;
      justify-content: center;
@@ -54,23 +36,17 @@
 .add-form__input{
      width: 40%;
      height: 30px;
-     /* border: 2px solid #8C82FC; */
      border-left: 2px solid #8C82FC;
      border-top: 2px solid #8C82FC;
      border-bottom: 2px solid #8C82FC;
      border-right: none;
-     /* padding: 4px; */
      padding-left: 8px;
      padding-right: 8px;
-     /* border-radius: 5px; */
      outline: none;
-     /* outline-color: rgb(92, 92, 112); */
      margin-left: 10px;
-     /* margin-right: 10px; */
 }
 
 .add-form__input:focus{
-     /* border: 2px solid #845EC2; */
      border-left: 2px solid #845EC2;
      border-top: 2px solid #845EC2;
      border-bottom: 2px solid #845EC2;
@@ -80,30 +56,17 @@
 
 .add-form__button{
      width: 12%;
-     /* height: 30px; */
      margin-left: 0px;
-    /* margin-right: 50px; */ 
-    /* background-color: rgb(255, 124, 1); */
-    /* padding: 10px; */
     color: white;
-    /* border-radius: 4px; */
-    /* outline: none; */
-    /* border: 3px solid #FF8066; */
     border-left:none;
     border-top: 2px solid #FF8066;
     border-bottom: 2px solid #FF8066;
     border-right: 2px solid #FF8066;
-    /* border-radius: 5px; */
     background: #FF8066;
-    /* border-width: 2px; */
-    /* border-color: white; */
-    /* ma: 20px; */
 }
 
 .add-form__button:hover{
      background: rgb(243, 243, 243);
-     /* border: 3px solid #FF8066; */
-     /* background-color: #845EC2; */
      border-left:none;
      border-top: 2px solid #845EC2;
      border-bottom: 2px solid #845EC2;
