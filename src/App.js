@@ -1,10 +1,10 @@
-import List from './Layout/List/List'
+import List from './Components/List/List'
 import "./app.css"
-import AddTodoFormLayout from './Layout/TodoFormLayout/AddTodoFormLayout'
+import AddTodoFormComponent from './Components/TodoFormComponent/AddTodoFormComponent'
 function App() {
   return (
     <div className="App">
-      <AddTodoFormLayout/>
+      <AddTodoFormComponent/>
       <div className="lists-container">
         <List ListTitle="Todo List" className="lists-container__items">
 

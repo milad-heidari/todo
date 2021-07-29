@@ -1,11 +1,11 @@
 import React from 'react'
 import "./list.css"
 import PropTypes from 'prop-types'
-import components from '../../Components/Partials/PatialsExport'
+import elements from '../../Elements/ExportElements'
 function List({ListTitle,className,children}) {
     return (
         <div className={className}>
-            <components.P
+            <elements.P
                 className=''
                 text={ListTitle}
 
