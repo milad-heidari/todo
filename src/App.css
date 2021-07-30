@@ -25,3 +25,20 @@
     justify-content: center;
     align-items: center;
 }
+
+.list-title{
+    color: white;
+}
+
+.todo-background-color{
+    background-color: #F51720;
+}
+
+.doing-background-color{
+    background-color: #F8D210;
+}
+
+.done-background-color{
+    background-color: #2FF3E0;
+}
+
