@@ -12,6 +12,7 @@ function AddTodoForm() {
                 />
                 <elements.Form
                     className="add-form"
+                    onSubmit={()=>{}}
                 >
 
                     <elements.Input
@@ -24,6 +25,7 @@ function AddTodoForm() {
                     />
 
                     <elements.Button
+                        clickHandler={(e)=>{alert('clicked')}}
                         className="add-form__button"
                         title="Add Task"
                         type="submit"

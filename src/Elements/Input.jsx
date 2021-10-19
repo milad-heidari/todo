@@ -4,12 +4,13 @@ import PropTypes from 'prop-types'
 
 
 
-function Input({className,type,id,placeholder,formikGetFieldProps}) {
+function Input({className,type,id,placeholder,inputValue,formikGetFieldProps}) {
     return (
         <input
             className={className}
             type={type}
             id={id}
+            value={inputValue}
             placeholder={placeholder}
             {...formikGetFieldProps}
         />
