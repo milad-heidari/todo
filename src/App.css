@@ -6,33 +6,92 @@
 
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     
     
 }
-.lists-container__items{
-    background-color: #FEFEDF;
+
+.list-container {
+    display: flex;
+    /* justify-content: space-around; */
     border-radius: 5px;
-    border: 1px  none;
     box-shadow: 0px 0px 8px 0px rgb(190, 190, 190);
+    flex-direction: column;
     padding-bottom: 10px;
     display: flex;
-    margin: 2px;
-    padding: 5px;
-    flex: 4;
+    margin: 4px;
+    /* padding: 5px; */
+    flex: 2;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    background-color: #FEFEDF;
+    /* align-items: center; */
+}
+
+.lists-container__items{
+    /* background-color: #FEFEDF; */
+    /* border-radius: 5px; */
+    /* border: 1px  none; */
+    /* box-shadow: 0px 0px 8px 0px rgb(190, 190, 190); */
+    
 }
 
 .list-title{
     color: white;
+    width: 100% !important;
+    height: 50px;
+    margin-top: 0px ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-title__item{
+    color: #4B4453 ;
+    padding: 10px 10px;
+    border-radius: 5px;
 }
 
 .todo-background-color{
     background-color: #F51720;
 }
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    border: 2px none ;
+    /* border-color: ; */
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgb(190, 190, 190);
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    /* border-width: 1; */
+}
+
+/* .doing-item{ */
+    /* border: 2px solid ; */
+    /* border-color: #F8D210; */
+    /* border-radius: 5px; */
+    /* margin: 10px; */
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    /* border-width: 1; */
+/* } */
+
+/* .done-item{ */
+    /* border: 2px solid ; */
+    /* border-color: #2FF3E0; */
+    /* border-radius: 5px; */
+    /* margin: 10px; */
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    /* border-width: 1; */
+/* } */
 
 .doing-background-color{
     background-color: #F8D210;
