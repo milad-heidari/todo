@@ -11,27 +11,102 @@
 }
 
 .modal-content{
-    width: 500px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     border-radius:5px;
+
     /* box-shadow: 0px 0px 8px 0px rgb(190, 190, 190); */
-    background-color: #FEFEDF;
+    
+
 }
 
 .modal-header{
     display:flex;
     justify-content: center;
-    border-bottom: 1px solid #8C82FC;
+    /* border-bottom: 1px solid #8C82FC; */
+    background-color: #FEFEDF;
     padding: 0,10px;
+    /* box-shadow: 0px 30px #747474; */
 }
 
 .modal-body{
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: #C4DBE0;
+    align-items: center;
     justify-content: center;
+}
+
+.formBtnContainer{
+    /* background-color: yellow; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.edit-input{
+    /* width: 100%; */
+    height: 30px;
+    border: 2px solid #8C82FC;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    outline: none;
+}
+
+.edit-input:focus{
+    border: 2px solid #845EC2;
+    background-color: rgba(247, 247, 247, 0.932);
+}
+
+.edit-select{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #8C82FC;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    outline: none;
+}
+
+.edit-select:focus{
+    border: 2px solid #845EC2;
+    background-color: rgba(247, 247, 247, 0.932);
+}
+
+.saveBtn{
+    padding: 4px 14px;
+    margin: 6px 0;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    background: #12911c;
+    cursor: pointer;
+    /* background: #2FF3E0; */
+
+}
+
+.deleteBtn{
+    padding: 4px 14px;
+    margin: 6px 0;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    background: #F51720;
+    cursor: pointer;
+}
+
+.cancelBtn{
+    padding: 4px 14px;
+    margin: 6px 0;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    background: #95970e;
+    cursor: pointer;
 }
 
 .modal-footer {
