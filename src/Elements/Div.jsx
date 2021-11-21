@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Div({className,children}) {
+function Div({className,children,onClickHandler}) {
     return (
-        <div className={className}>
+        <div onClick={onClickHandler} className={className}>
             {children}
         </div>
     )

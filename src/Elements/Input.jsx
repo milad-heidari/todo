@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 
 
-function Input({className,type,id,placeholder,inputValue,formikGetFieldProps}) {
+function Input({className,type,id,placeholder,inputValue,onChange}) {
     return (
         <input
             className={className}
@@ -12,7 +12,7 @@ function Input({className,type,id,placeholder,inputValue,formikGetFieldProps}) {
             id={id}
             value={inputValue}
             placeholder={placeholder}
-            {...formikGetFieldProps}
+            onChange={onChange}
         />
     )
 }
@@ -21,7 +21,6 @@ Input.propTypes = {
     className: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     placeholder:PropTypes.string.isRequired,
-    formikGetFieldProps:PropTypes.object.isRequired,
     id:PropTypes.string,
 }
 
