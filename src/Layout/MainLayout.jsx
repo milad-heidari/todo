@@ -1,83 +1,70 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
 import List from "../Components/List/List";
-import ListItem from "../Components/List/ListItem";
 import Modal from "../Components/Modal/Modal";
 import elements from "../Elements/ExportElements";
 import TodoFormComponent from "../Components/TodoFormComponent/AddTodoFormComponent";
-function MainLayout() {
-  const [showModal, setShowModal] = useState(false);
+function MainLayout({ tasks, getInitData,modalVisiblity }) {
+  // const [showModal, setShowModal] = useState(modalVisiblity);
 
-  // const modalHandler = () => {
-  //   console.log("befor", showModal);
-  //   setShowModal(!showModal);
-  //   console.log("after", showModal);
-  // };
+  useEffect(() => {
+    const getData = JSON.parse(localStorage.getItem("tasks"));
+    if(getData ){
+      getInitData(getData);
+    }else {
+      getInitData([])
+    }
+    // setShowModal(modalVisiblity)
+
+  }, []);
 
   return (
     <>
       <TodoFormComponent />
-      <Modal
-        onClose={() => {
-          setShowModal(false);
-        }}
-        setShow={showModal}
-      />
-      {/* <elements.Button
-        clickHandler={modalHandler}
-        className=""
-        title="show modal"
-      /> */}
+            {modalVisiblity ?<Modal />:null}
       <elements.Div className="lists-container">
-        <elements.Div className="list-container">
+        <List className="list-container" tasks={tasks} listType="todo">
+
           <elements.P
             text="Todo List"
             className="lists-container__items todo-background-color list-title"
           />
+        </List>
 
-          <elements.Div className="">
-            <elements.Div className="list-item">
-              <elements.P
-                text="sample itemssssss"
-                className="list-title__item"
-              />
-            </elements.Div>
-          </elements.Div>
-        </elements.Div>
-
-        <elements.Div className="list-container">
+        <List className="list-container" tasks={tasks} listType="doing">
           <elements.P
             text="Doing List"
             className="lists-container__items doing-background-color list-title"
           />
+        </List>
 
-          <elements.Div className="">
-            <elements.Div className="list-item">
-              <elements.P
-                text="sample itemssssss"
-                className="list-title__item"
-              />
-            </elements.Div>
-          </elements.Div>
-        </elements.Div>
-
-        <elements.Div className="list-container">
+        <List className="list-container" tasks={tasks} listType="done">
           <elements.P
             text="Done List"
-            className=" done-background-color list-title"
+            className="lists-container__items done-background-color list-title"
           />
-
-          <elements.Div className="">
-            <elements.Div className="list-item">
-              <elements.P
-                text="sample itemssssss"
-                className="list-title__item"
-              />
-            </elements.Div>
-          </elements.Div>
-        </elements.Div>
+        </List>
       </elements.Div>
     </>
   );
 }
 
-export default MainLayout;
+const mapState = (state) => {
+  return {
+    tasks: state.tasks,
+    modalVisiblity:state.modalVisiblity
+  };
+};
+
+const mapDispatch = (dispatch) => {
+  return {
+    getInitData: (payload) => {
+      dispatch({
+        type: "GET_INIT_DATA",
+        payload,
+      });
+    },
+  };
+};
+
+export default connect(mapState, mapDispatch)(MainLayout);
