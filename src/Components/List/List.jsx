@@ -8,7 +8,7 @@ function List({ tasks, className, children, listType }) {
   // return (
   //   <ListItem data={task} key={index} />
   // );
-console.log('ttttttttttt',tasks)
+// console.log('ttttttttttt',tasks)
   let filteredTasks = []
   
   if (tasks.length >= 1) {
@@ -33,7 +33,7 @@ console.log('ttttttttttt',tasks)
       return (
         <elements.P
           text={`your ${listType} task list is empty`}
-          className="list-title__item"
+          className="list-title__item emptyList"
         />
       );
     }

@@ -52,8 +52,12 @@
 
 .list-title__item{
     color: #4B4453 ;
-    /* padding: 10px 10px; */
     border-radius: 5px;
+    
+}
+
+.emptyList{
+    padding: 10px 10px;
     
 }
 
