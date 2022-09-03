@@ -82,6 +82,7 @@
 }
 
 .list-item:hover{
+    cursor: pointer;
     /* display: flex; */
     /* flex-direction: row; */
     /* border: 2px none ; */
