@@ -15,7 +15,7 @@ const reducer = (state= initState,action)=>{
             newState = {...state,tasks:action.payload}
             break;
             case "GET_INIT_DATA":
-            console.log('INIT',action.payload)
+            // console.log('INIT',action.payload)
             newState = {...state,tasks:action.payload}
             break;
             case 'SET_MODAL_VISIBILITY':
